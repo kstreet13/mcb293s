@@ -15,3 +15,6 @@ To download this repository, click "Download or Clone" then, "Download ZIP."
 
 ## Week 1 Notes
 Weekly US disease data taken from the [dslabs](https://cran.r-project.org/web/packages/dslabs/index.html) R package.
+
+**Subsetting a dataset**:
+sub <- data[ data$variable == "value" , ]
