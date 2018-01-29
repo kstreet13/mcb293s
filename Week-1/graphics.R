@@ -12,7 +12,7 @@ colors()
 
 plot(density(x))
 
-boxplot(x)
+boxplot(x, horizontal = TRUE)
 
 par(pch = 16)
 
