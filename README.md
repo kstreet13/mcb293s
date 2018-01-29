@@ -18,3 +18,7 @@ Weekly US disease data taken from the [dslabs](https://cran.r-project.org/web/pa
 
 **Subsetting a dataset**:
 sub <- data[ data$variable == "value" , ]
+
+Please submit a figure of your choice using the weekly US disease data to kstreet@berkeley.edu.
+
+## Week 2 Notes
