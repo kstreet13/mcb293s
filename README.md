@@ -24,3 +24,4 @@ sub <- data[ data$variable == "value" , ]
 Please submit a figure of your choice using the weekly US disease data to kstreet@berkeley.edu.
 
 ## Week 2 Notes
+If you want to know more about making nice heatmaps, check out the [superheat vignette](https://rlbarter.github.io/superheat/).
