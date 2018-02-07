@@ -25,3 +25,6 @@ Please submit a figure of your choice using the weekly US disease data to kstree
 
 ## Week 2 Notes
 If you want to know more about making nice heatmaps, check out the [superheat vignette](https://rlbarter.github.io/superheat/).
+
+## Week 3 Notes
+The [paper](http://www.cell.com/cell-reports/pdfExtended/S2211-1247(18)30075-5) I mentioned in class that cites the (unpublished) Slingshot paper.
