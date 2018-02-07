@@ -28,3 +28,5 @@ If you want to know more about making nice heatmaps, check out the [superheat vi
 
 ## Week 3 Notes
 The [paper](http://www.cell.com/cell-reports/pdfExtended/S2211-1247(18)30075-5) I mentioned in class that cites the (unpublished) Slingshot paper.
+
+The [Wikipedia page on William Sealy Gosset](https://en.wikipedia.org/wiki/William_Sealy_Gosset) (a.k.a. "Student") is worth a read.
