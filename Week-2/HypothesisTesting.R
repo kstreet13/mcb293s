@@ -34,7 +34,7 @@ abline(v = x.bar, col='red', lwd=3)
 # If we assume mu = 0, then the Central Limit Theorem tells us x.bar is drawn
 # from a normal distribution with mean 0 and variance s2 / n
 
-curve(dnorm(x, mean=0, sd=sqrt(s2/n)), from=-10, to=10, add=TRUE, lwd=2, col='green')
+curve(4*dnorm(x, mean=0, sd=sqrt(s2/n)), from=-10, to=10, add=TRUE, lwd=2, col='green')
 
 pnorm(x.bar, mean=0, sd=sqrt(s2/n))
 
@@ -80,6 +80,7 @@ for(i in 1:B){
 
 hist(x.bar.boots)
 abline(v=0, lwd=3, col='green')
+abline(v=x.bar, lwd=3, col='red')
 
 sum(x.bar.boots <= 0) / B  # p-value
 
