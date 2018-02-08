@@ -15,7 +15,7 @@ group2 <- dat$`Group 2`
 
 # format as data.frame with column for group
 df <- data.frame(value = c(group1,group2), 
-                 label = c(rep(1,length(group1)), rep(2,length(group2))))
+                 label = c( rep(1,length(group1)), rep(2,length(group2))))
 
 # histograms
 hist(group1, xlim = range(df$value))
@@ -30,7 +30,7 @@ hist(group2, xlim = range(df$value))
 
 t.test(group1, group2)
 
-t.test(df$value[df$label==1], df$value[df$label==2])
+t.test( df$value[df$label==1], df$value[df$label==2] )
 
 # -----------------------------------------
 # 2. Permutation test (difference in means)
@@ -38,9 +38,9 @@ t.test(df$value[df$label==1], df$value[df$label==2])
 
 # setup
 get_stat <- function(values, labels){
-    return(abs(mean(values[labels==1]) - 
-                   mean(values[labels==2])))
+    return(abs(mean(values[labels==1]) - mean(values[labels==2])))
 }
+
 stat <- get_stat(df$value, df$label)
 
 # set number of permutations
@@ -62,7 +62,7 @@ for(i in 1:B){
 }
 
 hist(stats.permute)
-abline(v=stat, lwd=3, col='green')
+abline(v = stat, lwd=3, col='green')
 
 # think about which values are "more extreme"
 sum(stats.permute >= stat) / B  # p-value
@@ -74,8 +74,9 @@ sum(stats.permute >= stat) / B  # p-value
 
 # setup
 get_stat <- function(values, labels){
-    return(abs(var(values[labels==1]) - 
-                   var(values[labels==2])))
+    return(mean(values[labels==1] >= 6) - mean(values[labels==2] >= 6))
+    #return(abs(var(values[labels==1]) - 
+    #               var(values[labels==2])))
 }
 stat <- get_stat(df$value, df$label)
 
