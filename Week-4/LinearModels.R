@@ -50,12 +50,12 @@ B <- 10000
 
 beta.boots <- sapply(1:B, function(i){
     boot.samp.ind <- sample(1:n, replace = TRUE)
-    boot.dat <- dat[boot.samp.ind,]
+    boot.dat <- dat[boot.samp.ind, ]
     boot.beta.hat <- coef(lm(DriversKilled ~ drivers + kms + PetrolPrice + law, data = boot.dat))
     return(boot.beta.hat)
 })
 beta.boots <- t(beta.boots)
-beta.boots <- data.frame(beta.boots)
+beta.boots <- as.data.frame(beta.boots)
 
 # or, equivalently
 
@@ -66,7 +66,7 @@ for(i in 1:B){
     boot.beta.hat <- coef(lm(DriversKilled ~ drivers + kms + PetrolPrice + law, data = boot.dat))
     beta.boots[i,] <- boot.beta.hat
 }
-beta.boots <- data.frame(beta.boots)
+beta.boots <- as.data.frame(beta.boots)
 
 
 hist(beta.boots$drivers, breaks=50, col='darkred')
@@ -77,7 +77,7 @@ abline(v=beta.hat[2], lwd=2, col='green4')
 hist(beta.boots$law, breaks=50, col='darkred')
 bounds <- quantile(beta.boots$law, probs = c(.025, .975))
 abline(v=bounds, lwd=2)
-abline(v=beta.hat[5], lwd=2, col='green4')
+abline(v=beta.hat[4], lwd=2, col='green4')
 
 
 # ---------------------------------
