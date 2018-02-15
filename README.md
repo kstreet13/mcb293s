@@ -32,3 +32,4 @@ The [paper](http://www.cell.com/cell-reports/pdfExtended/S2211-1247(18)30075-5) 
 The [Wikipedia page on William Sealy Gosset](https://en.wikipedia.org/wiki/William_Sealy_Gosset) (a.k.a. "Student") is worth a read.
 
 ## Week 4 Notes
+Here's [the Doodle Poll](https://doodle.com/poll/n4xvhw9acgbvqb5k) to determine which topic we'll cover in the second part of lecture on Tuesday.
