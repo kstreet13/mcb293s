@@ -4,7 +4,7 @@
 # Linear Models
 # --------------------------------
 
-# read in the data from the CSV file
+# use a built-in dataset
 dat <- Seatbelts
 dat <- as.data.frame(Seatbelts)
 
