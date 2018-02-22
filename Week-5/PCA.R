@@ -27,8 +27,8 @@ names(pca)
 
 # What does the data look like?
 require(scales)
-plot(pca$x[,1:2])
-plot(pca$x[,1:2], col = alpha(1, alpha = .5) )
+plot(pca$x[,1:2], asp = 1)
+plot(pca$x[,1:2], asp = 1, col = alpha(1, alpha = .5) )
 
 require(rgl)
 plot3d(pca$x[,1:3], aspect='iso')
@@ -66,7 +66,7 @@ lowest <- pca$rotation[,1] <= cutoff
 rownames(expr)[highest]
 rownames(expr)[lowest]
 
-plot(pca$x[,1:2], col = alpha(1, alpha = .5) )
+plot(pca$x[,1:2], asp=1, col = alpha(1, alpha = .5) )
 
 # -----------------------
 # 2. Clustering (k-means)
@@ -78,12 +78,12 @@ plot(pca$x[,1:2], col = alpha(1, alpha = .5) )
 
 dat <- pca$x[,1:3]
 
-km <- kmeans(dat, centers=5)
+km <- kmeans(dat, centers = 5)
 
 km$cluster
 table(km$cluster)
 
-plot(dat, col = km$cluster)
+plot(dat, asp = 1, col = km$cluster)
 
 plot3d(dat, aspect='iso', col = km$cluster)
 
@@ -113,3 +113,4 @@ plot3d(dat, aspect='iso', col = mc$classification)
 
 plot3d(dat, aspect='iso', col = brewer.pal(8,'Set1')[mc$classification])
 
+subset <- dat[mc$classification==8, ]
