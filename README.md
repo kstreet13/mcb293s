@@ -27,9 +27,4 @@ Please submit a figure of your choice using the weekly US disease data to kstree
 If you want to know more about making nice heatmaps, check out the [superheat vignette](https://rlbarter.github.io/superheat/).
 
 ## Week 3 Notes
-The [paper](http://www.cell.com/cell-reports/pdfExtended/S2211-1247(18)30075-5) I mentioned in class that cites the (unpublished) Slingshot paper.
-
 The [Wikipedia page on William Sealy Gosset](https://en.wikipedia.org/wiki/William_Sealy_Gosset) (a.k.a. "Student") is worth a read.
-
-## Week 4 Notes
-Here's [the Doodle Poll](https://doodle.com/poll/n4xvhw9acgbvqb5k) to determine which topic we'll cover in the second part of lecture on Tuesday.
