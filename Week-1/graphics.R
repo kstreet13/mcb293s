@@ -26,7 +26,7 @@ barplot( table(x) )
 
 barplot( table(x)/length(x) )
 
-barplot( matrix( table(x)/length(x), ncol=1))
+barplot( matrix( table(x)/length(x), ncol=1) )
 
 x <- factor(x, levels = c('red','blue','green'))
 
@@ -35,6 +35,7 @@ barplot( table(x) )
 barplot( table(x), col = c('red','blue','green'))
 
 # aside: RColorBrewer
+install.packages("RColorBrewer")
 require(RColorBrewer)
 display.brewer.all()
 
